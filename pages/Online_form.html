@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Online_form.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Request a Service</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="../images/Logo.png" alt="iHelp logo" class="logo">
+            <img src="../images/logo_d.png" alt="dinship logo" class="logo_d">
+            <ul class="nav">
+                <li class="active"><a href="student.html" id="ac">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">
+                        <img src="../images/user.png" alt="Profile" class="Profile-hover" />
+                    </a>
+                </li>
+                <li> <img src="../images/sound.png" alt="Profile" class="Profile-hover" /></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="book_form">
+                <div>
+                    <p style="text-align: left;color: #345C8C;font-size: 20px; margin-top: 10px; font-weight: bold;">
+                        Online Service </p>
+                </div>
+                <label class="form-label" style="padding-right: 20px; font-weight: bold;">Material name:</label>
+                <input class="form-control" type="text" style="display: inline;width: 700px;">
+                <i class="fas fa-microphone"
+                    style="padding: 10px;margin: 10px;margin-right: 100px;border-radius: 50px;border: 2px solid;"></i>
+                <br>
+
+                <br>
+                <label class="form-label" style="padding-right: 31px; font-weight: bold;">Material type:</label>
+                <input class="form-control" type="text" style="display: inline;width: 700px;">
+                <i class="fas fa-microphone"
+                    style="padding: 10px;margin: 10px;margin-right: 100px;border-radius: 50px;border: 2px solid;"></i>
+                <br>
+
+                <br>
+                <label class="form-label" style="padding-right: 10px; font-weight: bold;"> Material details:</label>
+                <input class="form-control" type="text" style="display: inline;width: 700px; height: 100px">
+                <i class="fas fa-microphone"
+                    style="padding: 10px;margin: 10px;margin-right: 100px;border-radius: 50px;border: 2px solid;"></i>
+                <br><br>
+
+                <div class="main-red-button-hover">
+                    <button id="nextButton">Submit</button>
+                </div>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p class="success-text">Your request has been sent successfully!</p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="containerf">
+            <div class="row_footer">
+                <div class="footer-col">
+                    <h4> iHelp </h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="Faq.html">FAQ</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook"></i></span>
+                        </li>
+
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <img src="../images/Logoo.png" alt="iHelp logo" class="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const submitButton = document.getElementById('nextButton');
+        const successMessage = document.getElementById('successMessage');
+
+        function displaySuccessMessage() {
+            successMessage.style.display = 'block';
+        }
+
+        submitButton.addEventListener('click', function () {
+            displaySuccessMessage();
+        });
+
+    </script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
