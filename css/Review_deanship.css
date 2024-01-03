@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: 'poppins';
+}
+
+#about {
+  margin-top: 60px;
+  height: 1000px;
+  padding: 130px 0px 0px 0px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+#about::before,
+#about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#about::after {
+  content: '';
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 140px;
+  height: inherit;
+}
+
+.logo_d {
+  width: 135px;
+  height: 120px;
+  margin-right: 200px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #6AAED9;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  list-style: none;
+}
+
+.nav li {
+  margin-left: 80px;
+}
+
+.nav li a {
+  font-size: 18px;
+  color: #2a2a2a;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  color: #6aaed9;
+}
+
+.Profile-hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #6aaed9;
+  margin-left: -50px;
+}
+
+.Profile-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  header .container {
+    width: 95%;
+  }
+
+  .nav {
+    width: 80%;
+  }
+
+  .nav li {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 574px) {
+  .nav {
+    display: none;
+  }
+}
+
+.active {
+  color: #6AAED9;
+}
+
+.section-heading {
+  color: #6AAED9;
+}
+
+#ac {
+  color: #6AAED9;
+}
+
+
+#top_social {
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+#boxing {
+  width: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row_footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 0 70px 70px 70px;
+  margin-top: 200px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #000;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #6AAED9;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #6AAED9;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.gg-facebook {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px
+}
+
+.gg-facebook::after,
+.gg-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box
+}
+
+.gg-facebook::before {
+  width: 8px;
+  height: 20px;
+  border-left: 4px solid;
+  border-top: 4px solid;
+  border-top-left-radius: 5px;
+  left: 6px
+}
+
+.gg-facebook::after {
+  width: 10px;
+  height: 4px;
+  background: currentColor;
+  top: 7px;
+  left: 4px;
+  transform: skew(-5deg)
+}
+
+.gg-youtube {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 16px;
+  height: 10px;
+  box-shadow: 0 0 0 2px;
+  border-radius:
+    15px 15px 15px 15px / 45px 45px 45px 45px
+}
+
+.gg-youtube::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  border-left: 4px solid currentColor;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 2.125rem;
+  height: 2.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 1em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover,
+.rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.rounded-social-buttons,
+.fa-facebook-f,
+.fa-youtube,
+.fa-instagram {
+  font-size: 18px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #1b55d1;
+}
+
+.rounded-social-buttons .social-button.facebook:hover,
+.rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #1b55d1;
+}
+
+
+
+.rounded-social-buttons .social-button.youtube {
+  background: #6AAED9;
+}
+
+.rounded-social-buttons .social-button.youtube:hover,
+.rounded-social-buttons .social-button.youtube:focus {
+  color: #6AAED9;
+  background: #fefefe;
+  border-color: #6AAED9;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #bd4c4c;
+}
+
+.rounded-social-buttons .social-button.instagram:hover,
+.rounded-social-buttons .social-button.instagram:focus {
+  color: #bd4c4c;
+  background: #fefefe;
+  border-color: #bd4c4c;
+}
+
+
+.services_section {
+  margin-top: 130px;
+  width: 100%;
+  background-color: white;
+  height: 610px;
+  background-image: url('../assests/images/services-right-dec.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  }
+  
+  .service_title {
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: auto;
+  }
+  
+  
+  .services_section .service_title h2 {
+  font-size: 30px;
+  color: #2a2a2a;
+  font-weight: 700px;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+  word-spacing: -1px;
+  }
+  
+  .op_service {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #345C8C;
+  opacity: 0.99;
+  }
+  
+  .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  }
+  
+  .accept-button,
+.reject-button {
+    padding: 8px 16px; /* Adjust padding to change button size */
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .accept-button {
+  background-color: rgba(0, 128, 0, 0.733);
+  color: white;
+  }
+  
+  .reject-button {
+  background-color: rgba(255, 0, 0, 0.651);
+  color: white;
+  }
+
+  .info-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #345C8C;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-table th {
+    background-color: #6AAED9;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.action-buttons button:hover {
+    background-color: #f2f2f2;
+}
