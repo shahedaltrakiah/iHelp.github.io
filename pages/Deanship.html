@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Deanship.css">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title> iHelp Website</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="../images/Logo.png" alt="iHelp logo" class="logo">
+            <img src="../images/logo_d.png" alt="dinship logo" class="logo_d">
+            <ul class="nav">
+                <li class="active"><a href="#" id="ac">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="../index.html">
+                        <img src="../images/user.png" alt="Logout" class="Profile-hover" />
+                    </a>
+                </li>
+                <li>
+                    <img src="../images/sound.png" alt="Profile" class="Profile-hover" id="soundButton"
+                        onclick="readText()" />
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_header">
+            <div class="first_intro">
+                <h4 class="second"> <span class="first_word"> Be part of </span> our effort to empower
+                    <span class="first_word"> students with special needs. </span> <span class="first_word"> <br>
+                </h4>
+                <p class="third"> Welcome to our platform at the University of Jordan, where we connect volunteers with
+                    students requiring academic support. </p>
+            </div>
+        </div>
+    </main>
+    <div class="services_section" id="service">
+        <div class="service_title">
+            <span class="op_service">our services</span>
+        </div>
+        <div class="services" id="service">
+            <a href="Review_deanship.html">
+                <div class="serv1">
+                    <h4>Review all the applications</h4>
+
+                    <div class="icon">
+                        <img src="../images/review.png" alt="request" id="boxing">
+                    </div>
+                    <div class="line"></div>
+                    <p> In the form, you can specify the disability type and service preference — whether
+                        it's online or on-campus. This includes options like accessing online books, automated services,
+                        or seeking assistance from a volunteer for educational needs. </p>
+                </div>
+            </a>
+
+            <a href="library_deanship.html">
+                <div class="serv1">
+                    <h4>Accessing the library</h4>
+                    <div class="icon">
+                        <img src="../images/access.png" alt="library" id="boxing">
+                    </div>
+                    <div class="line"></div>
+                    <p> Access the library allows you to find and download previously recorded materials sorted by
+                        various
+                        subjects.
+                        Simply use the search function and download button to explore and obtain the materials you need.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="containerf">
+            <div class="row_footer">
+                <div class="footer-col">
+                    <h4> iHelp </h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="Faq.html">FAQ</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <ul class="wrapper">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook"></i></span>
+                        </li>
+
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <img src="../images/Logoo.png" alt="iHelp logo" class="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function readText() {
+            const textToRead = "Be part of our effort to empower students with special needs.Welcome to our platform at the University of Jordan, where we connect volunteers with students requiring academic support.";
+
+            const speech = new SpeechSynthesisUtterance();
+            speech.lang = "en-US";
+            speech.text = textToRead;
+
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
